@@ -8,69 +8,56 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main" class="sr-only">Skip to content</a>
   <div class="container">
-    <header class="reveal" role="banner">
+    <header class="reveal">
       <div class="brand">
-        <div class="avatar"><img src="assets/profile.jpg" alt="Portrait of Parth"></div>
+        <div class="avatar"><img src="assets/profile.jpg" alt="Parth"></div>
         <div>
-          <h1 style="margin-bottom:2px">Parth Sahu</h1>
+          <h1>Parth Sahu</h1>
           <p>Get in touch</p>
         </div>
       </div>
-      <nav aria-label="Primary">
+      <nav>
         <a href="index.html">Home</a>
         <a href="projects.html">Projects</a>
-        <a href="contact.html" aria-current="page">Contact</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <main id="main">
-      <section id="contact" class="reveal" aria-labelledby="contact-heading">
-        <h3 class="section-title" id="contact-heading">Contact</h3>
+    <main>
+      <section id="contact" class="reveal">
+        <h3 class="section-title">Contact</h3>
         <div class="card contact-grid">
           <div>
-            <p class="muted">
-              I’m open to internships, freelance front-end work, and collaborations. Drop a message —
-              I usually reply within a day or two.
-            </p>
-            <div style="margin-top:14px" class="socials" aria-label="Social links">
-              <a href="https://www.linkedin.com/in/parth-sahu-ji" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href="https://github.com/parth-sahuji" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a href="https://twitter.com/PARTH_SAHU_JI" target="_blank" rel="noopener noreferrer">Twitter</a>
-              <a class="btn" href="https://drive.google.com/file/d/1LrrvI2kSR2SQS--spZeNXN_h4mPDYPEK/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+            <p class="muted">I’m available for internships, freelance front-end work or collaborations. Leave a message and I’ll get back within a day or two.</p>
+            <div style="margin-top:14px" class="socials">
+              <a href="https://www.linkedin.com/in/parth-sahu-ji" target="_blank">LinkedIn</a>
+              <a href="https://github.com/parth-sahuji" target="_blank">GitHub</a>
+              <a href="https://twitter.com/PARTH_SAHU_JI" target="_blank">Twitter</a>
+              <a class="btn" href="https://drive.google.com/file/d/1LrrvI2kSR2SQS--spZeNXN_h4mPDYPEK/view?usp=sharing" target="_blank">Resume</a>
             </div>
             <div style="margin-top:16px" class="muted">
-              <strong>Location:</strong> Haridwar, Uttarakhand, India<br>
-              <strong>Email:</strong> <a href="mailto:work.parthsahu@gmail.com">work.parthsahu@gmail.com</a>
+              <strong>Location:</strong> Haridwar, Uttarakhand, India
             </div>
           </div>
 
-          <form id="contact-form" onsubmit="handleSubmit(event)" aria-label="Contact form">
-            <label class="sr-only" for="name">Your name</label>
-            <input type="text" id="name" placeholder="Your name" required aria-required="true" />
-
-            <label class="sr-only" for="email">Your email</label>
-            <input type="email" id="email" placeholder="you@example.com" required aria-required="true" />
-
-            <label class="sr-only" for="message">Message</label>
-            <textarea id="message" rows="6" placeholder="Tell me a bit about your project…" required aria-required="true"></textarea>
-
+          <form id="contact-form" onsubmit="handleSubmit(event)">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+            <textarea id="message" rows="6" placeholder="Message" required></textarea>
             <button type="submit">Send Message</button>
-            <div id="form-note" class="muted" style="margin-top:8px;font-size:13px">
-              Front-end only for now — I’ll wire this to a backend soon.
-            </div>
+            <div id="form-note" class="muted" style="margin-top:8px;font-size:13px">Front-end only — will wire to backend later.</div>
           </form>
         </div>
       </section>
 
-      <footer class="reveal" role="contentinfo">
+      <footer class="reveal">
         <div class="muted">© <span id="yr"></span> Parth Sahu — Contact</div>
       </footer>
     </main>
   </div>
 
-  <button id="topbtn" class="topbtn" title="Back to top" aria-label="Back to top">↑</button>
+  <button id="topbtn" class="topbtn" title="Back to top">↑</button>
   <script src="script.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
