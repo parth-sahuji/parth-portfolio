@@ -1,130 +1,122 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Parth Sahu — Portfolio</title>
-  <meta name="description" content="Hi, I'm Parth Sahu — a frontend-focused web developer (BCA) who loves building clean, fast, and friendly websites." />
-  <meta name="theme-color" content="#0b0b0b" />
-  <meta property="og:title" content="Parth Sahu — Portfolio" />
-  <meta property="og:description" content="Frontend developer crafting sleek, responsive web experiences. View projects, skills, and contact details." />
-  <meta property="og:type" content="website" />
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parth Sahu | Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main" class="sr-only">Skip to content</a>
-
   <div class="container">
-    <header class="reveal" role="banner" aria-label="Site header">
+
+    <!-- ===== Navbar ===== -->
+    <header>
       <div class="brand">
-        <div class="avatar"><img src="assets/profile.jpg" alt="Portrait of Parth Sahu"></div>
+        <div class="avatar">
+          <img src="images/profile.jpg" alt="Parth Sahu">
+        </div>
         <div>
-          <h1 style="margin-bottom:2px">Parth Sahu</h1>
-          <p>BCA Student • Frontend Developer</p>
+          <h1>Parth Sahu</h1>
+          <p>Frontend & Web Developer</p>
         </div>
       </div>
-      <nav aria-label="Primary">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-        <a href="https://drive.google.com/file/d/1-7qFLZ5HQ_Cn3EhqAwYAF9TGGl60djtQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
+      <nav>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <main id="main">
-      <section class="hero reveal" aria-labelledby="intro-heading">
-        <div class="intro card">
-          <h2 id="intro-heading">Hi, I’m <span class="title">Parth</span> — nice to meet you!</h2>
-          <p><em>I like turning ideas into clean, fast, and friendly web experiences.</em></p>
-          <p class="muted">
-            Front-end developer working with HTML, CSS, JavaScript, WordPress, and Java (JSP/Servlets).
-            I’ve interned at Evepaper and Codsoft, and built projects like a Weather App and Gear Head.
-          </p>
-          <div class="cta" role="group" aria-label="Primary actions">
-            <a class="btn primary" href="https://drive.google.com/file/d/1-7qFLZ5HQ_Cn3EhqAwYAF9TGGl60djtQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
-            <a class="btn" href="projects.html">See Projects</a>
-            <a class="btn" href="contact.html">Say Hello</a>
-          </div>
-          <div style="margin-top:18px" class="muted" aria-label="Quick facts">
-            <span class="chip">BCA @ Bharati Vidyapeeth (IMED)</span>
-            <span style="margin-left:10px" class="chip">Haridwar • Pune</span>
-          </div>
+    <!-- ===== Hero Section ===== -->
+    <section class="hero">
+      <div class="intro">
+        <h2>Hello, I’m <span class="title">Parth Sahu</span></h2>
+        <p>A passionate frontend developer and web developer intern at Evepaper, creating responsive and accessible websites with modern technologies.</p>
+        <div class="cta">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="mailto:work.parthsahu@gmail.com" class="btn">Contact Me</a>
         </div>
+      </div>
 
-        <aside class="card profile-card" aria-label="Contact snippet">
-          <div class="profile-photo"><img src="assets/profile.jpg" alt="Parth smiling"></div>
-          <h3 style="margin-bottom:4px">Parth Sahu</h3>
-          <p class="muted" style="margin-top:0">Frontend Developer • Web Developer Intern at Evepaper</p>
-          <div style="width:100%;margin-top:10px;text-align:left" class="muted small">
-            <strong>Contact</strong>
-            <div class="time" style="margin-top:6px">
-              +91 93686 35641 •
-              <a href="mailto:work.parthsahu@gmail.com">work.parthsahu@gmail.com</a>
-            </div>
-            <div style="margin-top:10px" class="socials" aria-label="Social links">
-              <a class="btn" href="https://www.linkedin.com/in/parth-sahu-ji" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a class="btn" href="https://github.com/parth-sahuji" target="_blank" rel="noopener noreferrer">GitHub</a>
-              <a class="btn" href="https://twitter.com/PARTH_SAHU_JI" target="_blank" rel="noopener noreferrer">Twitter</a>
-            </div>
-          </div>
-        </aside>
-      </section>
-
-      <section id="about" class="reveal" aria-labelledby="about-heading">
-        <h3 class="section-title" id="about-heading">About Me</h3>
-        <div class="card">
-          <p class="muted">
-            I’m a BCA student at Bharati Vidyapeeth (IMED), Pune. I enjoy building responsive interfaces,
-            integrating APIs, and paying attention to performance and accessibility. I’ve worked with
-            WordPress/WooCommerce and JSP/Servlets, and I deploy projects on Netlify, Vercel, and GitHub Pages.
+      <!-- Profile Card -->
+      <div class="profile-card">
+        <div class="profile-photo">
+          <img src="images/profile.jpg" alt="Parth Sahu">
+        </div>
+        <h2>Parth Sahu</h2>
+        <p>Frontend Developer • Web Developer <br> Intern at Evepaper</p>
+        <div class="contact-info">
+          <p><strong>Contact</strong><br>
+          +91 93686 35641 • 
+          <a href="mailto:work.parthsahu@gmail.com">work.parthsahu@gmail.com</a>
           </p>
         </div>
-      </section>
-
-      <section id="skills" class="grid-2 reveal" aria-label="Skills and achievements">
-        <div>
-          <h3 class="section-title">Skills</h3>
-          <div class="card">
-            <div class="skills-list" role="list">
-              <div class="skill" role="listitem">HTML/CSS</div>
-              <div class="skill" role="listitem">JavaScript</div>
-              <div class="skill" role="listitem">Java (JSP/Servlets)</div>
-              <div class="skill" role="listitem">WordPress • WooCommerce</div>
-              <div class="skill" role="listitem">Git & GitHub</div>
-              <div class="skill" role="listitem">SQL • Oracle</div>
-              <div class="skill" role="listitem">Responsive Design</div>
-              <div class="skill" role="listitem">API Integration</div>
-              <div class="skill" role="listitem">GCP (basic)</div>
-              <div class="skill" role="listitem">Testing (JUnit)</div>
-            </div>
-          </div>
+        <div class="socials">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://twitter.com" target="_blank">Twitter</a>
         </div>
+      </div>
+    </section>
 
-        <div>
-          <h3 class="section-title">Achievements</h3>
-          <div class="card featured-ach reveal">
-            <img src="assets/trophyImage.jpg" alt="Parth holding the runner-up trophy at QueryXplode, April 2025">
-            <div>
-              <strong>QueryXplode — Runner Up (April 2025)</strong>
-              <div class="muted time">Optimized SQL queries; placed runner-up among 250+ students.</div>
-              <div style="margin-top:12px">
-                <strong>Research Paper Presentation — 2025</strong>
-                <div class="muted time">Presented at National IT Seminar — selected for the final round.</div>
-              </div>
-            </div>
-          </div>
+    <!-- ===== Skills Section ===== -->
+    <section id="skills">
+      <h3 class="section-title">Skills</h3>
+      <div class="skills">
+        <span class="skill">HTML & CSS</span>
+        <span class="skill">JavaScript</span>
+        <span class="skill">Java (JSP/Servlets)</span>
+        <span class="skill">WordPress & WooCommerce</span>
+        <span class="skill">Git & GitHub</span>
+        <span class="skill">SQL – Oracle</span>
+        <span class="skill">Responsive Design</span>
+        <span class="skill">API Integration</span>
+        <span class="skill">C & C++ (Basics)</span>
+        <span class="skill">Testing (Unit)</span>
+      </div>
+    </section>
+
+    <!-- ===== Projects Section ===== -->
+    <section id="projects">
+      <h3 class="section-title">Projects</h3>
+      <div class="projects">
+        <div class="project">
+          <img src="images/project1.jpg" alt="Project 1">
+          <h4>Gear Head</h4>
+          <p>Automobile customization website with UPI payment integration.</p>
         </div>
-      </section>
+        <div class="project">
+          <img src="images/project2.jpg" alt="Project 2">
+          <h4>Weather App</h4>
+          <p>Real-time weather web application with animated UI.</p>
+        </div>
+      </div>
+    </section>
 
-      <footer class="reveal" role="contentinfo">
-        <div class="muted">© <span id="yr"></span> Parth Sahu — Built with ♥</div>
-      </footer>
-    </main>
+    <!-- ===== Achievements Section ===== -->
+    <section id="achievements">
+      <h3 class="section-title">Achievements</h3>
+      <div class="achievement">
+        <img src="images/achievement1.jpg" alt="Achievement - BVDU School of Performing Arts Banner">
+        <p>Featured on the <strong>BVDU School of Performing Arts</strong> banner for excellence.</p>
+      </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact">
+      <h3 class="section-title">Contact Me</h3>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="4" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <footer>
+      <p>© 2025 Parth Sahu. All rights reserved.</p>
+    </footer>
   </div>
-
-  <button id="topbtn" class="topbtn" title="Back to top" aria-label="Back to top">↑</button>
-  <script src="script.js"></script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
