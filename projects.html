@@ -8,57 +8,58 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main" class="sr-only">Skip to content</a>
   <div class="container">
-    <header class="reveal">
+    <header class="reveal" role="banner">
       <div class="brand">
-        <div class="avatar"><img src="assets/profile.jpg" alt="Parth"></div>
+        <div class="avatar"><img src="assets/profile.jpg" alt="Portrait of Parth Sahu"></div>
         <div>
-          <h1>Parth Sahu</h1>
+          <h1 style="margin-bottom:2px">Parth Sahu</h1>
           <p>Projects</p>
         </div>
       </div>
-      <nav>
+      <nav aria-label="Primary">
         <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
+        <a href="projects.html" aria-current="page">Projects</a>
         <a href="contact.html">Contact</a>
       </nav>
     </header>
 
-    <main>
-      <section class="reveal">
-        <h3 class="section-title">Projects</h3>
-        <div class="projects">
-          <article class="project enlarged">
-            <img src="assets/gearhead.jpg" alt="Gear Head">
+    <main id="main">
+      <section class="reveal" aria-labelledby="projects-heading">
+        <h3 class="section-title" id="projects-heading">Projects</h3>
+        <div class="projects" role="list">
+          <article class="project enlarged" role="listitem">
+            <img src="assets/gearhead.jpg" alt="Screenshot of Gear Head website">
             <h4>Gear Head</h4>
-            <p class="muted">• Responsive UI<br>• UPI integration<br>• Live on Netlify</p>
+            <p class="muted">Responsive UI • UPI integration • Live on Netlify</p>
             <div style="margin-top:auto;display:flex;gap:8px;">
-              <a class="btn" href="https://my-gear-head.netlify.app/" target="_blank">Live</a>
+              <a class="btn" href="https://my-gear-head.netlify.app/" target="_blank" rel="noopener noreferrer">Live</a>
             </div>
           </article>
 
-          <article class="project enlarged">
-            <img src="assets/evepaper.jpg" alt="Evepaper">
+          <article class="project enlarged" role="listitem">
+            <img src="assets/evepaper.jpg" alt="Evepaper website preview">
             <h4>Evepaper</h4>
-            <p class="muted">• Responsive UI<br>• Blog & opportunity uploads<br>• Live project for company site</p>
+            <p class="muted">Responsive UI • Blog & opportunity uploads • Production site work</p>
             <div style="margin-top:auto;display:flex;gap:8px;">
-              <a class="btn" href="https://evepaper.com/" target="_blank">Live Project</a>
+              <a class="btn" href="https://evepaper.com/" target="_blank" rel="noopener noreferrer">Live Project</a>
             </div>
           </article>
 
-          <article class="project">
-            <img src="https://via.placeholder.com/800x400?text=Weather+App" alt="Weather App">
+          <article class="project" role="listitem">
+            <img src="https://via.placeholder.com/800x400?text=Weather+App" alt="Weather Application preview">
             <h4>Weather Application</h4>
-            <p class="muted">• Java JSP/Servlets<br>• Weather API integration<br>• Animated UI & live clock</p>
+            <p class="muted">Java JSP/Servlets • Weather API • Animated UI & live clock</p>
             <div style="margin-top:auto;display:flex;gap:8px;">
-              <a class="btn" href="https://github.com/parth-sahuji/Weather-App" target="_blank">Code</a>
+              <a class="btn" href="https://github.com/parth-sahuji/Weather-App" target="_blank" rel="noopener noreferrer">Code</a>
             </div>
           </article>
 
-          <article class="project">
-            <img src="https://via.placeholder.com/800x400?text=E-commerce+Website" alt="E-commerce">
+          <article class="project" role="listitem">
+            <img src="https://via.placeholder.com/800x400?text=E-commerce+Website" alt="E-commerce site preview">
             <h4>E-commerce Website (WooCommerce)</h4>
-            <p class="muted">• Product listings<br>• Cart & checkout<br>• UPI/QR payments</p>
+            <p class="muted">Product listings • Cart & checkout • UPI/QR payments</p>
           </article>
         </div>
       </section>
@@ -69,7 +70,7 @@
     </main>
   </div>
 
-  <button id="topbtn" class="topbtn" title="Back to top">↑</button>
+  <button id="topbtn" class="topbtn" title="Back to top" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>

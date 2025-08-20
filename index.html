@@ -4,93 +4,99 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Parth Sahu — Portfolio</title>
-  <meta name="description" content="Parth Sahu — Web Developer | BCA Student | Frontend Developer" />
+  <meta name="description" content="Hi, I'm Parth Sahu — a frontend-focused web developer (BCA) who loves building clean, fast, and friendly websites." />
+  <meta name="theme-color" content="#0b0b0b" />
+  <meta property="og:title" content="Parth Sahu — Portfolio" />
+  <meta property="og:description" content="Frontend developer crafting sleek, responsive web experiences. View projects, skills, and contact details." />
+  <meta property="og:type" content="website" />
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <a href="#main" class="sr-only">Skip to content</a>
+
   <div class="container">
-    <header class="reveal">
+    <header class="reveal" role="banner" aria-label="Site header">
       <div class="brand">
-        <div class="avatar"><img src="assets/profile.jpg" alt="Parth Sahu"></div>
+        <div class="avatar"><img src="assets/profile.jpg" alt="Portrait of Parth Sahu"></div>
         <div>
-          <h1>Parth Sahu</h1>
+          <h1 style="margin-bottom:2px">Parth Sahu</h1>
           <p>BCA Student • Frontend Developer</p>
         </div>
       </div>
-      <nav>
-        <a href="index.html">Home</a>
+      <nav aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
         <a href="projects.html">Projects</a>
         <a href="contact.html">Contact</a>
-        <a href="https://drive.google.com/file/d/1-7qFLZ5HQ_Cn3EhqAwYAF9TGGl60djtQ/view?usp=sharing" target="_blank">Resume</a>
+        <a href="https://drive.google.com/file/d/1-7qFLZ5HQ_Cn3EhqAwYAF9TGGl60djtQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Resume</a>
       </nav>
     </header>
 
-    <main>
-      <section class="hero reveal">
+    <main id="main">
+      <section class="hero reveal" aria-labelledby="intro-heading">
         <div class="intro card">
-          <h2>Hi, I'm <span class="title">Parth Sahu</span></h2>
-          <p><em>Crafting sleek, high-performance web experiences with code and creativity.</em></p>
+          <h2 id="intro-heading">Hi, I’m <span class="title">Parth</span> — nice to meet you!</h2>
+          <p><em>I like turning ideas into clean, fast, and friendly web experiences.</em></p>
           <p class="muted">
-            Front-end developer skilled in HTML, CSS, JavaScript, WordPress, and Java (JSP/Servlets).
-            Interned at Evepaper and Codsoft; built projects like Weather App and Gear Head.
+            Front-end developer working with HTML, CSS, JavaScript, WordPress, and Java (JSP/Servlets).
+            I’ve interned at Evepaper and Codsoft, and built projects like a Weather App and Gear Head.
           </p>
-          <div class="cta">
-            <a class="btn primary" href="https://drive.google.com/file/d/1-7qFLZ5HQ_Cn3EhqAwYAF9TGGl60djtQ/view?usp=sharing" target="_blank">Download Resume</a>
+          <div class="cta" role="group" aria-label="Primary actions">
+            <a class="btn primary" href="https://drive.google.com/file/d/1-7qFLZ5HQ_Cn3EhqAwYAF9TGGl60djtQ/view?usp=sharing" target="_blank" rel="noopener noreferrer">Download Resume</a>
             <a class="btn" href="projects.html">See Projects</a>
-            <a class="btn" href="contact.html">Contact Me</a>
+            <a class="btn" href="contact.html">Say Hello</a>
           </div>
-          <div style="margin-top:18px" class="muted">
+          <div style="margin-top:18px" class="muted" aria-label="Quick facts">
             <span class="chip">BCA @ Bharati Vidyapeeth (IMED)</span>
             <span style="margin-left:10px" class="chip">Haridwar • Pune</span>
           </div>
         </div>
 
-        <aside class="card profile-card">
-          <div class="profile-photo"><img src="assets/profile.jpg" alt="Parth"></div>
-          <h3>Parth Sahu</h3>
-          <p class="muted">Frontend Developer • Web Developer Intern at Evepaper</p>
+        <aside class="card profile-card" aria-label="Contact snippet">
+          <div class="profile-photo"><img src="assets/profile.jpg" alt="Parth smiling"></div>
+          <h3 style="margin-bottom:4px">Parth Sahu</h3>
+          <p class="muted" style="margin-top:0">Frontend Developer • Web Developer Intern at Evepaper</p>
           <div style="width:100%;margin-top:10px;text-align:left" class="muted small">
             <strong>Contact</strong>
-            <div class="time">
-              +91 93686 35641 • 
+            <div class="time" style="margin-top:6px">
+              +91 93686 35641 •
               <a href="mailto:work.parthsahu@gmail.com">work.parthsahu@gmail.com</a>
             </div>
-            <div style="margin-top:8px">
-              <a class="btn" href="https://www.linkedin.com/in/parth-sahu-ji" target="_blank">LinkedIn</a>
-              <a class="btn" href="https://github.com/parth-sahuji" target="_blank">GitHub</a>
-              <a class="btn" href="https://twitter.com/PARTH_SAHU_JI" target="_blank">Twitter</a>
+            <div style="margin-top:10px" class="socials" aria-label="Social links">
+              <a class="btn" href="https://www.linkedin.com/in/parth-sahu-ji" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              <a class="btn" href="https://github.com/parth-sahuji" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a class="btn" href="https://twitter.com/PARTH_SAHU_JI" target="_blank" rel="noopener noreferrer">Twitter</a>
             </div>
           </div>
         </aside>
       </section>
 
-      <section id="about" class="reveal">
-        <h3 class="section-title">About Me</h3>
+      <section id="about" class="reveal" aria-labelledby="about-heading">
+        <h3 class="section-title" id="about-heading">About Me</h3>
         <div class="card">
           <p class="muted">
-            I'm a BCA student at Bharati Vidyapeeth (IMED), Pune. I build responsive websites, integrate APIs,
-            and optimize UI for performance and accessibility. I have experience with WordPress/WooCommerce,
-            JSP/Servlets, and front-end projects deployed on Netlify and GitHub Pages.
+            I’m a BCA student at Bharati Vidyapeeth (IMED), Pune. I enjoy building responsive interfaces,
+            integrating APIs, and paying attention to performance and accessibility. I’ve worked with
+            WordPress/WooCommerce and JSP/Servlets, and I deploy projects on Netlify, Vercel, and GitHub Pages.
           </p>
         </div>
       </section>
 
-      <section id="skills" class="grid-2 reveal">
+      <section id="skills" class="grid-2 reveal" aria-label="Skills and achievements">
         <div>
           <h3 class="section-title">Skills</h3>
           <div class="card">
-            <div class="skills-list">
-              <div class="skill">HTML/CSS</div>
-              <div class="skill">JavaScript</div>
-              <div class="skill">Java (JSP/Servlets)</div>
-              <div class="skill">WordPress • WooCommerce</div>
-              <div class="skill">Git & GitHub</div>
-              <div class="skill">SQL • Oracle</div>
-              <div class="skill">Responsive Design</div>
-              <div class="skill">API Integration</div>
-              <div class="skill">GCP (basic)</div>
-              <div class="skill">Testing (JUnit)</div>
+            <div class="skills-list" role="list">
+              <div class="skill" role="listitem">HTML/CSS</div>
+              <div class="skill" role="listitem">JavaScript</div>
+              <div class="skill" role="listitem">Java (JSP/Servlets)</div>
+              <div class="skill" role="listitem">WordPress • WooCommerce</div>
+              <div class="skill" role="listitem">Git & GitHub</div>
+              <div class="skill" role="listitem">SQL • Oracle</div>
+              <div class="skill" role="listitem">Responsive Design</div>
+              <div class="skill" role="listitem">API Integration</div>
+              <div class="skill" role="listitem">GCP (basic)</div>
+              <div class="skill" role="listitem">Testing (JUnit)</div>
             </div>
           </div>
         </div>
@@ -98,26 +104,26 @@
         <div>
           <h3 class="section-title">Achievements</h3>
           <div class="card featured-ach reveal">
-            <img src="assets/trophyImage.jpg" alt="Trophy image">
+            <img src="assets/trophyImage.jpg" alt="Parth holding the runner-up trophy at QueryXplode, April 2025">
             <div>
               <strong>QueryXplode — Runner Up (April 2025)</strong>
-              <div class="muted time">Developed optimized SQL queries; runner-up among 250+ students. Trophy photo on the left.</div>
+              <div class="muted time">Optimized SQL queries; placed runner-up among 250+ students.</div>
               <div style="margin-top:12px">
                 <strong>Research Paper Presentation — 2025</strong>
-                <div class="muted time">Presented at National IT Seminar, final round selected.</div>
+                <div class="muted time">Presented at National IT Seminar — selected for the final round.</div>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <footer class="reveal">
+      <footer class="reveal" role="contentinfo">
         <div class="muted">© <span id="yr"></span> Parth Sahu — Built with ♥</div>
       </footer>
     </main>
   </div>
 
-  <button id="topbtn" class="topbtn" title="Back to top">↑</button>
+  <button id="topbtn" class="topbtn" title="Back to top" aria-label="Back to top">↑</button>
   <script src="script.js"></script>
   <script defer src="/_vercel/insights/script.js"></script>
 </body>
